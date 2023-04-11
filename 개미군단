@@ -1,0 +1,8 @@
+function soluton(hp){
+let answer=0;
+let 장군개미= Math.floor(hp/5);
+let 병정개미= Math.floor((hp%5)/3);
+let 일개미= Math.floor((hp%5)%3);
+answer= 장군개미+병정개미+일개미;
+ 
+ return answer;
