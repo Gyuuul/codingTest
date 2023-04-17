@@ -1,0 +1,5 @@
+function solution(order) {
+
+    var answer = String(order).replace(/[^369]/gi, '').length;
+    return answer;
+}
