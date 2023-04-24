@@ -1,0 +1,8 @@
+function solution(num, k) {
+    if(String(num).includes(k)){
+    var answer = String(num).indexOf(k)+1;
+    }else{
+        answer=-1;
+    }
+    return answer;
+}
