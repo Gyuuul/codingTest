@@ -1,0 +1,15 @@
+function solution(numbers, direction) {
+    let num= numbers[numbers.length-1];
+    let num2= numbers[0];
+    
+    if(direction=='right'){ 
+        numbers.unshift(num);    
+        numbers.splice(-1,1);
+    }else{
+        numbers.splice(0,1);
+        numbers.push(num2)
+        
+        
+    }
+    return numbers;
+}
