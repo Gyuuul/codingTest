@@ -1,0 +1,12 @@
+function solution(numbers) {
+    var answer = 0;
+    let arr1= numbers.sort((a,b)=>a-b);
+    let num1= arr1[0]*arr1[1];
+    let num2= arr1[arr1.length-1]*arr1[arr1.length-2];
+    if(num1>num2){
+        answer=num1;
+    }else{
+        answer=num2;
+    }
+    return answer;
+}
