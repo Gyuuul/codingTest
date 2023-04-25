@@ -1,0 +1,7 @@
+function solution(array) {
+    var answer = [];
+    answer.push(array.indexOf(Math.max(...array)));
+    answer.unshift(Math.max(...array));
+    
+  return answer;
+}
