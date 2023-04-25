@@ -1,0 +1,15 @@
+function solution(n) {
+    var answer = 0;
+    for(let i=1; i<=n; i++){
+        let count=0; *중요*
+        for(let k=1; k<=i; k++){
+            if(i%k===0){
+                count+=1; //이렇게 하면 .length 안해줘도 됨
+            }
+        }
+        if(count>2){
+            answer+=1; //이렇게 하면 .length 안해줘도 됨
+        }
+    }
+    return answer;
+}
